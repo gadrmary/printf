@@ -1,13 +1,13 @@
 #include "main.h"
 /**
-*call_sp - fun that get the fun and call it and check
-*for signs
-*@format: the str format
-*@i: pointer to the index of our format
-*@p: pointer to out struct
-*@pCount: pointer to our counter
-*@pa:pointer to our arguments
-*/
+ * call_sp - fun that get the fun and call it and check
+ * for signs
+ * @format: the str format
+ * @i: pointer to the index of our format
+ * @p: pointer to out struct
+ * @pCount: pointer to our counter
+ * @pa: pointer to our arguments
+ */
 void call_sp(const char *format, int *i, struct sp_char *p,
 int *pCount, va_list pa)
 {
