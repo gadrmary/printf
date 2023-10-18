@@ -116,7 +116,7 @@ int print_hexa_upper(va_list types, char buffer[],
 
 /************** PRINT HEXX NUM IN LOWER OR UPPER **************/
 /**
- * print_hexa - Prints a hexadecimal number in lower or upper
+ * print_hexa - Prints a hexadecimal number in lower or upper case
  * @types: List of arguments
  * @map_to: Array of values to map the number to
  * @buffer: Buffer array to handle print
@@ -124,11 +124,10 @@ int print_hexa_upper(va_list types, char buffer[],
  * @width: get width
  * @precision: Precision specification
  * @size: Size specifier
- * @size: Size specification
  * Return: Number of chars printed
  */
-int print_hexa(va_list types, char map_to[],
-char buffer[], int flags, int width, int precision, int size)
+int print_hexa(va_list types, char map_to[], char buffer[],
+	int flags, int width, int precision, int size)
 {
 	int i = BUFF_SIZE - 2;
 	unsigned long int num = va_arg(types, unsigned long int);
